@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tusitio.com/sitemap.xml
+Sitemap: https://servicios-electricos-perdomo.vercel.app/sitemap.xml
