@@ -3,28 +3,28 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonios = [
     {
-      nombre: "Carlos Restrepo",
+      nombre: "Sonia Caballero",
       comentario:
-        "Excelente servicio. Llegaron rápido, revisaron la instalación y solucionaron el problema sin cobrar de más. Muy profesionales.",
-      ubicacion: "Bello",
+        "Excelente, hace muy bien su labor. Tiene mucho conocimiento y muy responsable.",
+      ubicacion: "Itagüí",
       estrellas: 5,
-      foto: "https://i.pravatar.cc/100?img=12",
+      foto: "https://lh3.googleusercontent.com/a-/ALV-UjX4Pyhh-icaU7TICqOZAOvIijZFABZogr4E1Q3JNjOZ2y3u_po=s36-c-rp-mo-br100",
     },
     {
-      nombre: "Laura González",
+      nombre: "Jorge Ivan Diez Lopera",
       comentario:
-        "Contraté instalación completa para mi apartamento y quedó impecable. Todo ordenado, seguro y con certificación. Súper recomendados.",
-      ubicacion: "Envigado",
+        "Honesto y trabajo certificado por norma. Recomendado",
+      ubicacion: "Itagüí",
       estrellas: 5,
-      foto: "https://i.pravatar.cc/100?img=32",
+      foto: "https://lh3.googleusercontent.com/a-/ALV-UjXLe-qUA89uGQNLaF7vbm0v67vKdCJ5IXz_9k4ysBFZzJG76U8t=s36-c-rp-mo-ba2-br100",
     },
     {
-      nombre: "Julián Herrera",
+      nombre: "Marleny Ruiz Ardila",
       comentario:
-        "Tuve una emergencia en la noche por un corto y respondieron en minutos. Servicio rápido y confiable.",
-      ubicacion: "Medellín",
+        "Muy responsable, un excelente profesional, todo el trabajo que hizo quedó exelente, muy recomendable",
+      ubicacion: "Itagüí",
       estrellas: 5,
-      foto: "https://i.pravatar.cc/100?img=56",
+      foto: "https://lh3.googleusercontent.com/a/ACg8ocJonYdhW9EbYgOfOV6jscBtk4Nih7u8dXEYaFUFhyWi-PkLvg=s36-c-rp-mo-br100",
     },
   ];
 
@@ -32,9 +32,19 @@ export default function Testimonials() {
     <section className="py-20 bg-white" id="testimonials">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-5">Testimonios</h2>
-        <p className="text-gray-600 mb-14">
+        <p className="text-gray-600 mb-6">
           Lo que dicen nuestros clientes sobre la calidad, puntualidad y profesionalismo de nuestro servicio.
         </p>
+
+        {/* ⭐ Botón PRO */}
+        <a
+          href="https://www.google.com/maps/place/Servicios+El%C3%A9ctricos+Perdomo/@6.1708824,-75.620087,17z/data=!4m8!3m7!1s0x2d0bf6b0c8a2d7cd:0x2bd007ddb433e509!8m2!3d6.1708771!4d-75.6175121!9m1!1b1!16s%2Fg%2F11mm0845dg?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mb-12 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full shadow hover:bg-yellow-500 transition"
+        >
+          Ver todas las reseñas en Google
+        </a>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {testimonios.map((t, i) => (
